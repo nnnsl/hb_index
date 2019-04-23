@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>小闸科技_智能停车平台：找车位 约车位 享车位 停车位 缴车费 管车位 一键搞定</title>
+    <link rel="icon" href="../img/xzlogo.png" type="image/x-icon" />
+    <!--<link rel="stylesheet" type="text/css"media="screen and (max-device-width: 1020px)" href="../mobile/css/index.css" />-->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/navLine.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/map.css">
+    <link rel="stylesheet" href="../plugins/css/swiper.min.css">
+    <link rel="stylesheet" href="../plugins/css/animate.min.css">
+    <link rel="stylesheet" href="../plugins/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!--头部-->
+    <header>
+        <div class="header_title">
+            <div class="header_title_left">您好，欢迎光临小闸科技</div>
+            <div class="header_title_right"><a href="javascript:void(0);"
+                    style="color: red;">小闸出行大数据平台&nbsp;&nbsp;&nbsp;</a>|&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);"
+                    style="color: black;">网站地图</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);"
+                    style="color: black;">帮助中心</a>
+            </div>
+        </div>
+        <!--导航-->
+        <nav>
+            <div class="nav row">
+                <div class="logo col-md-6">
+                    <img class="xz_logo" src="../img/newlogo.png" alt="小闸出行logo" title="小闸出行logo">
+                    <!--<img class="gray_line" src="../img/functional_icon/gray_line.png" alt="">-->
+                </div>
+                <ul class="nav_out col-md-6">
+                    <li class="on"><a id="index" href="../view/index.html">首页</a></li>
+                    <li>
+                        <a id="cpID" href="javascript:void(0);">物联区块产品</a>
+                    </li>
+                    <li>
+                        <a id="swID" href="../view/cooperation.html">物联区块应用</a>
+                    </li>
+                    <li>
+                        <a id="shID" href="javascript:void(0);">社会责任</a>
+                    </li>
+                    <li><a id="newsID" href="javascript:void(0);">新闻中心</a></li>
+                    <li>
+                        <a id="meID" href="javascript:void(0);">关于我们</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--页面主体颜色条-->
+        <div id="colorLine" class="color-line_news">
+            <div id="colorLine_product" class="color-line_news_child animated fadeIn">
+                <div>
+                    <label><a class="colorLine_application_label" href="javascript:void(0);">核心产品</a></label>
+                    <div>
+                        <ul>
+                            <li><a href="javascript:void(0);">硬件一</a></li>
+                            <li><a href="javascript:void(0);">硬件二</a></li>
+                            <li><a href="javascript:void(0);">硬件三</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <label><a class="colorLine_application_label" href="javascript:void(0);">商用产品</a></label>
+                    <div>
+                        <ul>
+                            <li><a href="javascript:void(0);">智能锁</a></li>
+                            <li><a href="javascript:void(0);">基站</a></li>
+                            <li><a href="javascript:void(0);">地磁</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="colorLine_application" class="color-line_news_child animated fadeIn">
+                <div>
+                    <label><a class="colorLine_application_label" href="javascript:void(0);">小闸出行</a></label>
+                    <div>
+                        <ul>
+                            <li><a href="javascript:void(0);">车主产品</a></li>
+                            <li><a href="javascript:void(0);">车主产品</a></li>
+                            <li><a href="javascript:void(0);">小闸电商</a></li>
+                            <li><a href="javascript:void(0);">解决方案</a></li>
+                            <li><a href="javascript:void(0);">成功案例</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <label><a class="colorLine_application_label" href="javascript:void(0);">物联网其他典型应用</a></label>
+                    <div class="colorLine_application_child">
+                        <div>
+                            <ul>
+                                <li><a href="javascript:void(0);">智慧城市</a></li>
+                                <li><a href="javascript:void(0);">智慧商圈</a></li>
+                                <li><a href="javascript:void(0);">智慧照明</a></li>
+                                <li><a href="javascript:void(0);">智慧井盖</a></li>
+                                <li><a href="javascript:void(0);">智慧环保</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><a href="javascript:void(0);">智慧社区</a></li>
+                                <li><a href="javascript:void(0);">智慧医院</a></li>
+                                <li><a href="javascript:void(0);">定位追踪</a></li>
+                                <li><a href="javascript:void(0);">智能门锁</a></li>
+                                <li><a href="javascript:void(0);">智能表计</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label><a class="colorLine_application_label" href="javascript:void(0);">未来养老</a></label>
+                </div>
+            </div>
+            <div id="colorLine_news" class="color-line_news_child animated fadeIn">
+                <label><a href="javascript:void(0);">新闻动态</a></label>
+                <label><a href="javascript:void(0);">信息分享</a></label>
+            </div>
+            <div id="colorLine_aboutours" class="color-line_news_child animated fadeIn">
+                <label><a href="javascript:void(0);">公司介绍</a></label>
+                <label><a href="javascript:void(0);">加入小闸</a></label>
+                <label><a href="javascript:void(0);">联系我们</a></label>
+            </div>
+            <div id="colorLine_social" class="color-line_news_child animated fadeIn">
+                <label><a href="javascript:void(0);">公司介绍</a></label>
+                <label><a href="javascript:void(0);">加入小闸</a></label>
+                <label><a href="javascript:void(0);">联系我们</a></label>
+            </div>
+    </header>
+    <!--轮播图-->
+    <section>
+        <div class="swiper-container swiper1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide orange-slide sec-six">
+                    <div class="set_view">
+                        <span class="sec-btn"></span>
+                    </div>
+                </div>
+                <div class="swiper-slide blue-slide sec-one">
+                    <p class="ani sec_txt sec_txt1" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s"
+                        swiper-animate-delay="0.3s">
+                        <img src="../img/i_font_01.png" alt=""></p>
+                    <p class="ani sec_txt sec_txt2" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s"
+                        swiper-animate-delay="0.3s"><img src="../img/i_font_02.png" alt=""></p>
+                </div>
+                <div class="swiper-slide red-slide sec-two">
+                    <p class="ani sec_txt sec_txt1" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s"
+                        swiper-animate-delay="0.3s"><img src="../img/i_font_03.png" alt=""></p>
+                    <p class="ani sec_txt sec_txt2" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s"
+                        swiper-animate-delay="0.3s"><img src="../img/i_font_04.png" alt=""></p>
+                </div>
+                <div class="swiper-slide orange-slide sec-three">
+                    <p class="ani sec_txt sec_txt1" swiper-animate-effect="slideInRight" swiper-animate-duration="1s"
+                        swiper-animate-delay="0.3s"><img src="../img/i_font_05.png" alt=""></p>
+                    <p class="ani sec_txt sec_txt2" swiper-animate-effect="slideInLeft" swiper-animate-duration="1s"
+                        swiper-animate-delay="0.3s"><img src="../img/i_font_06.png" alt=""></p>
+                </div>
+                <div class="swiper-slide blue-slide sec-four">
+                    <p class="ani sec_txt sec_txt1" swiper-animate-effect="slideInUp" swiper-animate-duration="1s"
+                        swiper-animate-delay="0.3s"><img src="../img/i_font_07.png" alt=""></p>
+                    <p class="ani sec_txt sec_txt2" swiper-animate-effect="slideInDown" swiper-animate-duration="1s"
+                        swiper-animate-delay="0.3s"><img src="../img/i_font_08.png" alt=""></p>
+                </div>
+                <div class="swiper-slide red-slide sec-five">
+                    <p class="ani  sec_txt sec_txt1" swiper-animate-effect="fadeInDownBig" swiper-animate-duration="1s"
+                        swiper-animate-delay="0.3s"><img src="../img/i_font_01.png" alt=""></p>
+                    <p class="ani sec_txt sec_txt2" swiper-animate-effect="fadeInUpBig" swiper-animate-duration="1s"
+                        swiper-animate-delay="0.3s"><img src="../img/i_font_02.png" alt=""></p>
+                </div>
+            </div>
+            <!-- Add Arrows -->
+            <!--<div class="swiper-button-next"></div>-->
+            <!--<div class="swiper-button-prev"></div>-->
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- 视频 -->
+        <div class="video on">
+            <div class="video_content">
+                <p class="close"><img src="../img/cha.png" alt=""></p>
+                <p class="title">《小闸出行宣传片》</p>
+
+                <video controls="controls"
+                    src="http://7xj3cg.com2.z0.glb.qiniucdn.com/website/mp4/etcpindexadvertisingvideo.mp4"
+                    id="ckplayer_a1" width="775" height="500" loop="loop" poster="../img/video-s.png"
+                    webkit-playsinline=""></video>
+
+            </div>
+        </div>
+    </section>
+    <article>
+        <!--页面轮播选择框-->
+        <div class="art_first">
+            <div class="art_first_con">
+                <div class="art_first_content">
+                    <span class="art_first_img imgone"></span>
+                    <p>小闸出行</p>
+                    <p>源于车主、服务车主、精于体验、追求极致</p>
+                </div>
+                <div class="art_first_content">
+                    <span class="art_first_img imgtwo"></span>
+                    <p>物联网其他典型应用</p>
+                    <p>智慧芯片 + 智慧平台 + 解决方案</p>
+                </div>
+                <div class="art_first_content">
+                    <span class="art_first_img imgthree"></span>
+                    <p>未来养老</p>
+                    <p>敢为人先、科技创新、服务社会</p>
+                </div>
+            </div>
+        </div>
+        <!--地图-->
+        <div class="art_container">
+            <div class="art_con_map">
+                <div class="map_txt">
+                    <img src="../img/map_text.PNG" alt="">
+                </div>
+                <div class="map_city">
+                    <p><span class="map_city_dot d1"></span>小闸进驻的城市</p>
+                    <p><span class="map_city_dot d2"></span>即将进驻的城市</p>
+                    <p><span class="map_city_dot heart"></span>截止<label
+                            style="color: #ffb8b8;font-weight: normal">2019年1月</label>小闸出行现有合作车场逾百家，服务车位近十万，共享车位逾万个</p>
+                </div>
+                <!--城市-->
+                <div class="act_dot">
+                    <!--进驻城市-->
+                    <div class="dot d3">
+                        <P>
+                            <span class="s_dot "></span>
+                            <span class="b_dot b1"></span>
+                            <span class="b_dot b2"></span>
+                            <span class="b_dot b3"></span>
+                            哈尔滨
+                        </P>
+                    </div>
+                    <div class="dot d4">
+                        <P>
+                            <span class="s_dot "></span>
+                            <span class="b_dot b1"></span>
+                            <span class="b_dot b2"></span>
+                            长沙
+                        </P>
+                    </div>
+                    <div class="dot d5">
+                        <P>
+                            <span class="s_dot "></span>
+                            <span class="b_dot b1"></span>
+                            <span class="b_dot b2"></span>
+                            济南
+                        </P>
+                    </div>
+                    <div class="dot d6">
+                        <P>
+                            <span class="s_dot "></span>
+                            <span class="b_dot b1"></span>
+                            <span class="b_dot b2"></span>
+                            深圳
+                        </P>
+                    </div>
+                    <div class="dot d7">
+                        <P>
+                            <span class="s_dot "></span>
+                            <span class="b_dot b1"></span>
+                            <span class="b_dot b2"></span>
+                            浏阳
+                        </P>
+                    </div>
+                    <div class="dot d8">
+                        <P>
+                            <span class="s_dot "></span>
+                            <span class="b_dot b1"></span>
+                            <span class="b_dot b2"></span>
+                            合肥
+                        </P>
+                    </div>
+                    <!--<div class="dot d9">-->
+                    <!--<P>-->
+                    <!--<span class="s_dot "></span>-->
+                    <!--<span class="b_dot b1"></span>-->
+                    <!--<span class="b_dot b2"></span>-->
+                    <!--南昌-->
+                    <!--</P>-->
+                    <!--</div>-->
+                    <div class="dot d10">
+                        <P>
+                            <span class="s_dot "></span>
+                            <span class="b_dot b1"></span>
+                            <span class="b_dot b2"></span>
+                            昆明
+                        </P>
+                    </div>
+
+                    <div class="dot d11">
+                        <P>
+                            <span class="s_dot "></span>
+                            <span class="b_dot b1"></span>
+                            <span class="b_dot b2"></span>
+                            贵阳
+                        </P>
+                    </div>
+                    <div class="dot d12">
+                        <P>
+                            <span class="s_dot "></span>
+                            <span class="b_dot b1"></span>
+                            <span class="b_dot b2"></span>
+                            兰州
+                        </P>
+                    </div>
+                    <div class="dot d13">
+                        <P>
+                            <span class="s_dot "></span>
+                            <span class="b_dot b1"></span>
+                            <span class="b_dot b2"></span>
+                            杭州
+                        </P>
+                    </div>
+                    <!--即将驻扎城市-->
+                    <div class="dot d14">
+                        <P>
+                            <span class="s_dot  will"></span>
+                            <span class="b_dot b1 wb"></span>
+                            <span class="b_dot b2 wb"></span>
+                            北京
+                        </P>
+                    </div>
+                    <div class="dot d15 ">
+                        <P>
+                            <span class="s_dot will"></span>
+                            <span class="b_dot b1 wb"></span>
+                            <span class="b_dot b2 wb"></span>
+                            天津
+                        </P>
+                    </div>
+
+                    <div class="dot d16">
+                        <P>
+                            <span class="s_dot will"></span>
+                            <span class="b_dot b1 wb"></span>
+                            <span class="b_dot b2 wb"></span>
+                            上海
+                        </P>
+                    </div>
+                    <div class="dot d17">
+                        <P>
+                            <span class="s_dot will"></span>
+                            <span class="b_dot b1 wb"></span>
+                            <span class="b_dot b2 wb"></span>
+                            广州
+                        </P>
+                    </div>
+                    <div class="dot d18">
+                        <P>
+                            <span class="s_dot will"></span>
+                            <span class="b_dot b1 wb"></span>
+                            <span class="b_dot b2 wb"></span>
+                            成都
+                        </P>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--新闻动态-->
+        <div class="art_news">
+            <div class="news">
+                <div class="new_title">
+                    <img src="../img/p_title_03.gif" alt="" style="width: 228px">
+                </div>
+                <div class="new_title_info">
+                    <p>行业干货、实时资讯、一扫而尽</p>
+                </div>
+                <div class="news_main swiper-container swiper2">
+                    <div class="swiper-wrapper news_main_info">
+                        <div class="news_m_conte0nt swiper-slide ">
+                            <ul>
+                                <li><a href="javascript:void(0);">
+                                        <div class="new_msg">
+                                            <p>好风凭借力，牵手宝骏基金，助力</p>
+                                            <p>2018年9月21日，湖南小闸科技有限公司迎来天使</p>
+                                        </div>
+                                    </a></li>
+                                <li><a href="javascript:void(0);">
+                                        <div class="new_msg">
+                                            <p>商业综合体智慧停车解决方案落地</p>
+                                            <p>2018年11月16日，小闸科技智慧停车解决方案</p>
+                                        </div>
+                                    </a></li>
+                                <li><a href="javascript:void(0);">
+                                        <div class="new_msg">
+                                            <p>崔文亮专访：昔日播种耕耘，如今开</p>
+                                            <p>三周年特辑 | 北邮研究生毕业后高调进入雅虎北研</p>
+                                        </div>
+                                    </a></li>
+                                <li><a href="javascript:void(0);">
+                                        <div class="new_msg">
+                                            <p>宝马收购停车应用 Parkmobile，希望</p>
+                                            <p>宝马收购了Parkmobile，后者是一款为北美车主</p>
+                                        </div>
+                                    </a></li>
+                                <li><a href="javascript:void(0);">
+                                        <div class="new_msg">
+                                            <p>沈阳鼓励社会资本投资建停车场 每个车</p>
+                                            <p>2018年11月16日，小闸科技智慧停车解决方案</p>
+                                        </div>
+                                    </a></li>
+                                <li><a href="javascript:void(0);">
+                                        <div class="new_msg">
+                                            <p>随着《北京市机动车停车条例》于3月30日上午经</p>
+                                            <p>解读停车条例出台对停车企业的影响</p>
+                                        </div>
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="news_m_conte0nt swiper-slide ">
+                            <ul>
+                                <li><a href="javascript:void(0);">
+                                        <div class="new_msg">
+                                            <p>好风凭借力，牵手宝骏基金，助力</p>
+                                            <p>2018年9月21日，湖南小闸科技有限公司迎来天使</p>
+                                        </div>
+                                    </a></li>
+                                <li><a href="javascript:void(0);">
+                                        <div class="new_msg">
+                                            <p>商业综合体智慧停车解决方案落地</p>
+                                            <p>2018年11月16日，小闸科技智慧停车解决方案</p>
+                                        </div>
+                                    </a></li>
+                                <li><a href="javascript:void(0);">
+                                        <div class="new_msg">
+                                            <p>崔文亮专访：昔日播种耕耘，如今开</p>
+                                            <p>三周年特辑 | 北邮研究生毕业后高调进入雅虎北研</p>
+                                        </div>
+                                    </a></li>
+                                <li><a href="javascript:void(0);">
+                                        <div class="new_msg">
+                                            <p>宝马收购停车应用 Parkmobile，希望</p>
+                                            <p>宝马收购了Parkmobile，后者是一款为北美车主</p>
+                                        </div>
+                                    </a></li>
+                                <li><a href="javascript:void(0);">
+                                        <div class="new_msg">
+                                            <p>沈阳鼓励社会资本投资建停车场 每个车</p>
+                                            <p>2018年11月16日，小闸科技智慧停车解决方案</p>
+                                        </div>
+                                    </a></li>
+                                <li><a href="javascript:void(0);">
+                                        <div class="new_msg">
+                                            <p>随着《北京市机动车停车条例》于3月30日上午经</p>
+                                            <p>解读停车条例出台对停车企业的影响</p>
+                                        </div>
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="news_m_conte0nt swiper-slide ">
+                            <ul>
+                                <li><a href="javascript:void(0);">
+                                        <div class="new_msg">
+                                            <p>好风凭借力，牵手宝骏基金，助力</p>
+                                            <p>2018年9月21日，湖南小闸科技有限公司迎来天使</p>
+                                        </div>
+                                    </a></li>
+                                <li><a href="javascript:void(0);">
+                                        <div class="new_msg">
+                                            <p>商业综合体智慧停车解决方案落地</p>
+                                            <p>2018年11月16日，小闸科技智慧停车解决方案</p>
+                                        </div>
+                                    </a></li>
+                                <li><a href="javascript:void(0);">
+                                        <div class="new_msg">
+                                            <p>崔文亮专访：昔日播种耕耘，如今开</p>
+                                            <p>三周年特辑 | 北邮研究生毕业后高调进入雅虎北研</p>
+                                        </div>
+                                    </a></li>
+                                <li><a href="javascript:void(0);">
+                                        <div class="new_msg">
+                                            <p>宝马收购停车应用 Parkmobile，希望</p>
+                                            <p>宝马收购了Parkmobile，后者是一款为北美车主</p>
+                                        </div>
+                                    </a></li>
+                                <li><a href="javascript:void(0);">
+                                        <div class="new_msg">
+                                            <p>沈阳鼓励社会资本投资建停车场 每个车</p>
+                                            <p>2018年11月16日，小闸科技智慧停车解决方案</p>
+                                        </div>
+                                    </a></li>
+                                <li><a href="javascript:void(0);">
+                                        <div class="new_msg">
+                                            <p>随着《北京市机动车停车条例》于3月30日上午经</p>
+                                            <p>解读停车条例出台对停车企业的影响</p>
+                                        </div>
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="news_m_conte0nt swiper-slide ">
+                            <ul>
+                                <li><a href="javascript:void(0);">
+                                        <div class="new_msg">
+                                            <p>好风凭借力，牵手宝骏基金，助力</p>
+                                            <p>2018年9月21日，湖南小闸科技有限公司迎来天使</p>
+                                        </div>
+                                    </a></li>
+                                <li><a href="javascript:void(0);">
+                                        <div class="new_msg">
+                                            <p>商业综合体智慧停车解决方案落地</p>
+                                            <p>2018年11月16日，小闸科技智慧停车解决方案</p>
+                                        </div>
+                                    </a></li>
+                                <li><a href="javascript:void(0);">
+                                        <div class="new_msg">
+                                            <p>崔文亮专访：昔日播种耕耘，如今开</p>
+                                            <p>三周年特辑 | 北邮研究生毕业后高调进入雅虎北研</p>
+                                        </div>
+                                    </a></li>
+                                <li><a href="javascript:void(0);">
+                                        <div class="new_msg">
+                                            <p>宝马收购停车应用 Parkmobile，希望</p>
+                                            <p>宝马收购了Parkmobile，后者是一款为北美车主</p>
+                                        </div>
+                                    </a></li>
+                                <li><a href="javascript:void(0);">
+                                        <div class="new_msg">
+                                            <p>沈阳鼓励社会资本投资建停车场 每个车</p>
+                                            <p>2018年11月16日，小闸科技智慧停车解决方案</p>
+                                        </div>
+                                    </a></li>
+                                <li><a href="javascript:void(0);">
+                                        <div class="new_msg">
+                                            <p>随着《北京市机动车停车条例》于3月30日上午经</p>
+                                            <p>解读停车条例出台对停车企业的影响</p>
+                                        </div>
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="news_m_conte0nt swiper-slide ">
+                            <ul>
+                                <li><a href="javascript:void(0);">
+                                        <div class="new_msg">
+                                            <p>好风凭借力，牵手宝骏基金，助力</p>
+                                            <p>2018年9月21日，湖南小闸科技有限公司迎来天使</p>
+                                        </div>
+                                    </a></li>
+                                <li><a href="javascript:void(0);">
+                                        <div class="new_msg">
+                                            <p>商业综合体智慧停车解决方案落地</p>
+                                            <p>2018年11月16日，小闸科技智慧停车解决方案</p>
+                                        </div>
+                                    </a></li>
+                                <li><a href="javascript:void(0);">
+                                        <div class="new_msg">
+                                            <p>崔文亮专访：昔日播种耕耘，如今开</p>
+                                            <p>三周年特辑 | 北邮研究生毕业后高调进入雅虎北研</p>
+                                        </div>
+                                    </a></li>
+                                <li><a href="javascript:void(0);">
+                                        <div class="new_msg">
+                                            <p>宝马收购停车应用 Parkmobile，希望</p>
+                                            <p>宝马收购了Parkmobile，后者是一款为北美车主</p>
+                                        </div>
+                                    </a></li>
+                                <li><a href="javascript:void(0);">
+                                        <div class="new_msg">
+                                            <p>沈阳鼓励社会资本投资建停车场 每个车</p>
+                                            <p>2018年11月16日，小闸科技智慧停车解决方案</p>
+                                        </div>
+                                    </a></li>
+                                <li><a href="javascript:void(0);">
+                                        <div class="new_msg">
+                                            <p>随着《北京市机动车停车条例》于3月30日上午经</p>
+                                            <p>解读停车条例出台对停车企业的影响</p>
+                                        </div>
+                                    </a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination btn-change"></div>
+                </div>
+            </div>
+        </div>
+        <!--合作伙伴-->
+        <div class="art_news art_partner">
+            <div class="news">
+                <div class="new_title">
+                    <img src="../img/p_title_06.gif" alt="" style="width: 228px">
+                </div>
+                <div class="new_title_info">
+                    <p>研发机构、战略联盟、强强联合、多领域战略合作</p>
+                </div>
+                <p>注：</p>
+                <div class="news_main swiper-container swiper3">
+                    <div class="swiper-wrapper news_main_info">
+                        <div class="news_m_conte0nt swiper-slide ">
+                            <ul>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                            </ul>
+                        </div>
+                        <div class="news_m_conte0nt swiper-slide ">
+                            <ul>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                            </ul>
+                        </div>
+                        <div class="news_m_conte0nt swiper-slide ">
+                            <ul>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                            </ul>
+                        </div>
+                        <div class="news_m_conte0nt swiper-slide ">
+                            <ul>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                            </ul>
+                        </div>
+                        <div class="news_m_conte0nt swiper-slide ">
+                            <ul>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                                <li><a href="javascript:void(0);"><span></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination btn-change"></div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!--底部-->
+    <footer>
+        <div class="f_nav">
+            <ul>
+                <li><a href="javascript:void(0);">关于小闸</a></li>
+                <li class="f_nav_line">|</li>
+                <li><a href="javascript:void(0);">合作机构</a></li>
+                <li class="f_nav_line">|</li>
+                <li><a href="javascript:void(0);">隐私政策</a></li>
+                <li class="f_nav_line">|</li>
+                <li><a href="javascript:void(0);">法律声明</a></li>
+                <li class="f_nav_line">|</li>
+                <li><a href="javascript:void(0);">常见问题</a></li>
+                <li class="f_nav_line"> </li>
+                <li><a href="javascript:void(0);">官方媒体</a></li>
+            </ul>
+        </div>
+        <div class="f_copy">
+            <p>&copy;&nbsp;&nbsp;2017Copyright 湖南小闸科技有限公司 &nbsp;版权所有 &nbsp;湘ICP备&nbsp;18018318号</p>
+        </div>
+    </footer>
+
+</body>
+<script src="../plugins/js/jquery-3.3.1.min.js"></script>
+<script src="../js/index.js"></script>
+<script src="../js/functional.js"></script>
+<script src="../plugins/js/swiper.min.js"></script>
+<script src="../plugins/js/swiper.animate.min.js"></script>
+<script src="../plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+<script>
+    let web_name = "index";
+</script>
+
+</html>
